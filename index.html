@@ -6,20 +6,21 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Fonts/Roboto-VariableFont_wdth,wght.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="nav-bar">
         <h2>Personal Portfolio</h2>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <!-- <li><a href="#">About</a></li> -->
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
      </div>
      <!-- section1 Homeno choice -->
-      <section class="Home sec">
+      <section class="Home sec" id="home">
         <!-- Nav Bar -->
      <div class="s1-main">
         <div class="s1-con1">
@@ -34,13 +35,13 @@
       </section>
       
       <!-- section1 Skills -->
-       <section class="section Skill">
+       <section class="section Skill" id="skill">
         <h2>My Skills</h2>
           <div class="skill-con">
               <div class="skill1">
-                <div class="html"><p>HTML</p></div>
-                <div class="css"><p>CSS</p></div>
-                <div class="Javascript"><p>Javascript</p></div>
+                <div class="html"><p>HTML <i class="fa-brands fa-html5" style="color: #ec7c13;"></i></p></div>
+                <div class="css"><p>CSS <i class="fa-brands fa-css3-alt" style="color: #1477c2;"></i></p></div>
+                <div class="Javascript"><p>Javascript <i class="fa-brands fa-js" style="color: #FFD43B;"></i></p></div>
               </div>
               <div class="skill2">
                 <div class="html-p"><div class="html-pp"></div> <p>80%</p></div>
@@ -49,5 +50,43 @@
               </div>
           </div>
        </section>
+
+      <!-- section1 Projects -->
+          <section class="section Projects" id="projects">
+            <h2>My Projects</h2>
+                 <div class="pro-con">
+                    <div class="pro-pic"><img src="assests/images1.jpeg" alt="Projects"><p>Restarunt Website</p></div>
+                    <div class="pro-pic"><img src="assests/images2" alt="Projects"><p>E-Commerce Website</p></div>
+                    <div class="pro-pic"><img src="assests/New-Project-7.webp" alt="Projects"><p>Portfolio Website</p></div>
+                    <div class="pro-pic"><img src="assests/image4.jpeg" alt="Projects"><p>Social Media Website</p></div>
+                    <div class="pro-pic"><img src="assests/images5.jpeg  "  alt="Projects"><p>Car Service Website</p></div>
+                    <div class="pro-pic"><img src="assests/images6.jpeg" alt="Projects"><p>Movie Review Website</p></div>
+                 </div>
+          </section>
+
+          <!-- section1 contact -->
+          <section class="Contact section" id="contact">
+            <form action="" class="contact-form">
+              <h2>Get in Touch</h2>
+              <label for="name">Name</label>
+                   <input type="text" id="name">
+              <label for="Email">Email ID</label>
+                   <input type="email" id="Email">
+              <label for="Phone">Phone No</label>
+                   <input type="text" id="Phone">
+              <label for="Feedback">Give Your Feedback</label>
+                 <textarea name="Feedback" id="Feedback"></textarea>
+                 <button>Submit</button>
+                 <div class="sm">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-github"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                 </div>
+            </form>
+          </section>
+         <!-- Footer -->
+          <footer>Copy right @ joe creations</footer>
 </body>
 </html>
