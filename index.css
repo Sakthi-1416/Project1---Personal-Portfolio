@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --Tcolor1:black;
+    --Tcolor2:white;
+    --BGcolor1:rgb(255, 217, 0);
+    --BGcolor2:white;
+}
+body{
+    color: var(--Tcolor1);
+    font-family: 'roboto';
+    /* background-color: var(--BGcolor1); */
+    min-height: 100vh;
+}
+/* nav - bar */
+
+.nav-bar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:rgb(218, 98, 150);
+    background-color:rgb(138, 43, 226,0.5); */
+background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 100%);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 60px;
+    box-shadow: 4px 2px 4PX rgb(119, 14, 93);
+    z-index: 100;
+}
+.nav-bar li
+{
+  display: inline;
+}
+.nav-bar h2{
+    font-size: 30px;
+    color:rgb(153, 24, 147);
+}
+.nav-bar a
+{
+    text-decoration: none;
+    color: var(--Tcolor2);
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.nav-bar a:hover
+{
+   color: var(--Tcolor1);
+}
+.Home
+{
+    /* background-color: var(--BGcolor1);
+    background:linear-gradient(to right,yellow,red); */
+/* background: linear-gradient(21deg, rgba(180,39,137,1) 35%, rgba(100,208,197,1) 100%); */
+background: rgb(238,174,202);
+background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 100%);
+   height: 100vh;
+   width: 100%;
+   display: block;
+
+}
+.s1-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: calc(100vh - 80px);
+    margin: 0 10%;
+    gap: 2rem;
+    
+}
+.s1-con1,.s2-con
+{
+    min-width: 400px;
+    height: 500px;
+    /* border: 2px solid red; */
+    animation: popup 4s linear 1s ;
+}
+.s1-con1 span
+{
+    color: var(--Tcolor2);
+  font-size: 3rem;
+  margin-bottom: 10px;
+
+}
+
+.s1-con1 h2
+{
+  font-size: 2.5rem;
+}
+.profile-pic
+{
+   width: 400px;
+   height: 500px;
+    filter: drop-shadow(8px 8px 16px rgb(61, 10, 41));
+}
+.s2-con
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s1-con1
+{
+    place-content: center;
+}
+.s1-main button
+{
+    width: 130px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@keyframes popup
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    40%
+    {
+        opacity: 0.3;
+        transform: translateY(-30px);
+    }
+    70%
+    {
+        opacity: 0.6;
+        /* transform: translateY(50px); */
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    border: 2px solid red;
+}
