@@ -26,7 +26,8 @@ body{
     align-items: center;
     /* background-color:rgb(218, 98, 150);
     background-color:rgb(138, 43, 226,0.5); */
-background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 100%);
+/* background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 100%); */
+background-color: black;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -41,7 +42,7 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
 }
 .nav-bar h2{
     font-size: 30px;
-    color:rgb(153, 24, 147);
+    color:rgb(250, 248, 250);
 }
 .nav-bar a
 {
@@ -53,7 +54,7 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
 }
 .nav-bar a:hover
 {
-   color: var(--Tcolor1);
+   color: blueviolet;
 }
 .Home
 {
@@ -69,11 +70,12 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
 }
 .s1-main{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
-    height: calc(100vh - 80px);
+    height: 100vh;
     margin: 0 10%;
-    gap: 2rem;
+    gap: 3rem;
+ 
     
 }
 .s1-con1,.s2-con
@@ -82,6 +84,7 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
     height: 500px;
     /* border: 2px solid red; */
     animation: popup 4s linear 1s ;
+  
 }
 .s1-con1 span
 {
@@ -98,7 +101,7 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
 .profile-pic
 {
    width: 400px;
-   height: 500px;
+   height: 450px;
     filter: drop-shadow(8px 8px 16px rgb(61, 10, 41));
 }
 .s2-con
@@ -120,6 +123,8 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
     border-radius: 50px;
     margin-top: 10px;
     font-size: 20px;
+    border-top-left-radius: 0px;
+    /* border-bottom-right-radius: 0px; */
 }
 
 @keyframes popup
@@ -148,9 +153,112 @@ background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 
 
 .section
 {
+    padding: 50px 10%;
+    background-color:beige;
+    height: 100vh;
+    
+}
+.section h2
+{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    
+}
+
+ 
+.skill-con
+{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: calc(100vh - 80px);
-    border: 2px solid red;
+    gap: 2rem;
+    height: 400px;
+    box-shadow: 1px 2px 2px 4px rgb(117, 114, 114);
+    margin-top: 40px;
+    padding:  0 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+.skill1
+{
+    flex: 1;
+   /* border: 2px solid black; */
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem ;
+}
+.skill1 div
+{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.skill2
+{
+    flex: 2;
+      /* border: 2px solid black; */
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem ;
+
+}
+.skill2 .html-p,.css-p,.js-p
+{
+    border: 1px solid rgb(87, 10, 150);
+    width: 100%;
+    text-align: end;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.skill2 p
+{
+    font-size: 5x;
+    color: rgb(14, 13, 13);
+}
+.skill2 .html-p,.css-p,.js-p
+{
+    position: relative;
+    background-color: bisque;
+}
+.html-pp
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+.css-pp
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    width: 75%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+.js-pp
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+
 }
