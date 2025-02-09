@@ -66,48 +66,51 @@ background-color: black;
     /* background-color: var(--BGcolor1);
     background:linear-gradient(to right,yellow,red); */
 /* background: linear-gradient(21deg, rgba(180,39,137,1) 35%, rgba(100,208,197,1) 100%); */
-background: rgb(238,174,202);
+/* background: rgb(238,174,202);
 background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 100%);
    height: 100vh;
-   width: 100%;
-   display: block;
+   width: 100%; */
 
 }
 .s1-main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-end;
     height: 100vh;
-    margin: 0 10%;
-    gap: 3rem;
+    padding:  2% 5%;
+    gap: 2rem;
+background: linear-gradient(345deg, rgba(238,174,202,1) 0%, rgba(233,228,148,1) 100%);
+
  
     
 }
 .s1-con1,.s2-con
 {
-    min-width: 400px;
+   
+    width: 400px;
     height: 500px;
     /* border: 2px solid red; */
     animation: popup 4s linear 1s ;
   
 }
-.s1-con1 span
+#span
 {
     color: var(--Tcolor2);
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 
 }
 
 .s1-con1 h2
 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .profile-pic
 {
-   width: 400px;
-   height: 450px;
+   max-width: 400px;
+   max-height: 400px;
     filter: drop-shadow(8px 8px 16px rgb(61, 10, 41));
+    
 }
 .s2-con
 {
@@ -379,26 +382,12 @@ form button
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: all 1s linear .5s;
+    padding: 4px;
 }
-.fa-instagram:hover
+.fa-brands:hover
 {
-
-}
-.fa-instagram:hover
-{
-
-}
-.fa-instagram:hover
-{
-
-}
-.fa-instagram:hover
-{
-
-}
-.fa-instagram:hover
-{
-
+      transform: translateY(-8px);
 }
 /* footer */
 footer
@@ -409,4 +398,58 @@ footer
     height: 40px;
     background-color: black;
     color: white;
+}
+@media screen and (max-width: 690px) {
+.s1-con1,.s2-con
+    {
+      width: 150px;
+      height:  300px;
+      margin: 20px 0;
+    }
+    .profile-pic
+    {
+    width: 100%;
+    height: 80%;
+    /* display: none; */
+    }
+    .s1-con1 h2{
+    font-size: 20px;
+    }
+    .s1-main{
+        height: calc(80vh - 50px);
+        justify-content: center;
+
+        
+    }
+    .nav-bar li,a
+    {
+        display: none;
+    }
+    .nav-bar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    .nav-bar h2 
+    {
+        /* text-align: center; */
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+
+.hide
+{
+    display: none;
+}
+/* .skill-con p
+{
+    font-size: 1rem;
+} */
+
 }
